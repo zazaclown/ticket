@@ -1,0 +1,49 @@
+{
+	"user": 
+		[
+			{
+				"id" : 121212,
+				"user": "Dario Pepper",
+				"login": "pepper",
+				"pass": "123"
+				
+			},
+			{
+				"id" : 3333,
+				"user": "Marta Sanchez",
+				"login": "sanchez",
+				"pass": "123"
+				
+			},
+			{
+				"id" : 777,
+				"user": "Roberto Gomez",
+				"login": "gomez",
+				"pass": "123"
+			}
+		],
+	"rol": 
+		[
+    		{ 	"id": 1, 
+    			"descripcion": "administrador"
+    		},
+    		{ 	"id": 2, 
+    			"descripcion": "usuario"
+    		},
+    		{ 	"id": 3, 
+    			"descripcion": "cliente"
+    		}
+  		],
+  	"user-rol":
+  		[
+  			{	"idUser": 121212, 
+  				"idRol":1
+  			},
+  			{	"idUser": 3333, 
+  				"idRol":2
+  			},
+  			{	"idUser": 9898, 
+  				"idRol":3
+  			}
+  		]
+}

@@ -1,0 +1,15 @@
+{
+    "name": "jQueryFB",
+    "version": "0.0.1",
+    "main": [ "jQueryFB.js" ],
+    "ignore": [
+        "README*",
+        "LICENSE*",
+        ".git*",
+        "*bower.json",
+        "*jquery.json",
+        "*.html",
+        "*.map"
+    ],
+    "dependencies": { "jquery": "latest" }
+}

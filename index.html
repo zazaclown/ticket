@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="App">
+  <head>
+    <title>Tickets</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <script src="./bower_components/angular/angular.js" ></script>
+    <script src="./bower_components/angular-ui-router/release/angular-ui-router.js" ></script>
+
+    <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- <script src="./bower_components/jquery/dist/jquery.js" ></script> -->
+    <!-- <script src="./bower_components/bootstrap/dist/js/bootstrap.js" ></script> -->
+
+    <!-- App -->
+    <script src="./module/app.js" ></script>
+    <script src="./module/config.js" ></script>
+
+    <!-- Constant -->
+    <script src="./constant/constant.js" ></script>
+
+    <!-- Services -->
+    <script src="./services/sessionVariable.js" ></script>
+    <script src="./services/sessionHandler.js" ></script>
+    <script src="./services/consumirHttp.js" ></script>
+
+    <!-- Controllers -->
+    <script src="./controllers/indexCtrl.js" ></script>
+    <script src="./controllers/navbarCtrl.js" ></script>
+
+    <!-- Directives -->
+    <script src="./directives/directives.js" ></script>
+
+  </head>
+  <body>
+
+    <div ng-controller="indexCtrl as iCtrl">
+
+      <d-navbar></d-navbar>
+
+      <div ui-view ></div>
+
+      <d-footer></d-footer>
+
+      <pre ng-if="iCtrl.debug" ng-bind="iCtrl.$state.$current.self | json"></pre>
+
+    </div>
+
+  </body>
+</html>
+
+<!--<div ng-if= "iCtrl.segments.form.visible === 1" ng-include="iCtrl.segments.form.url"></div>-->
+
+<!--<div ng-if= "iCtrl.segments.bienvenido.visible === 1" ng-include="iCtrl.segments.bienvenido.url"></div>-->
+
+<!-- <div ng-if= "iCtrl.segments.footer.visible === 1" ng-include="iCtrl.segments.footer.url"></div> -->
+
+<!-- <d-footer ng-if= "iCtrl.segments.footer.visible === 1"></d-footer> -->
+
+<!-- <div ng-if= "iCtrl.segments.navbar.visible === 1" ng-include="iCtrl.segments.navbar.url"></div> -->
+
+<!-- <d-navbar ng-if= "iCtrl.segments.navbar.visible === 1"></d-navbar> -->
