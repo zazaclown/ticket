@@ -6,19 +6,25 @@
 
 		$urlRouterProvider.otherwise("/bienvenido");
 
-    	$stateProvider
+    $stateProvider
 		    .state('bienvenido', {
 		        url: "/bienvenido",
 		        //templateUrl: K_CONST.urlViews.bienvenido
 		        templateUrl: K_CONST.urlViews.bienvenido
 		    })
 
-		$stateProvider
-		    .state('form', {
-		        url: "/form",
+		    .state('userview', {
+		        url: "/userview",
 		        //templateUrl: K_CONST.urlViews.bienvenido
-		        templateUrl: K_CONST.urlViews.form
+		        templateUrl: K_CONST.urlViews.userview
 		    })
+
+		    .state('adminview', {
+		        url: "/adminview",
+		        //templateUrl: K_CONST.urlViews.bienvenido
+		        templateUrl: K_CONST.urlViews.adminview
+		    })
+
 	})
 
 })(angular)

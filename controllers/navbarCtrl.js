@@ -2,20 +2,18 @@
 
 	var app = angular.module('App');
 
-	app.controller('navbarCtrl', ['$state', 'sessionHandler', 'sessionVariable', 
+	app.controller('navbarCtrl', ['$state', 'sessionHandler', 'sessionVariable',
 
 		function($state, sessionHandler, sessionVariable){
 
-			navctrl = this; 
+			navctrl = this;
 
 			navctrl.init = false;
 
 			navctrl.sessionVariable = sessionVariable;
 
-			console.log(sessionHandler);
-
 			navctrl.iniciarSesion = function(){
-				
+
 				sessionHandler.iniciarSesion( {"user":navctrl.user, "pass":navctrl.pass} )
 					.then(function(response){
 
@@ -24,12 +22,14 @@
 							sessionVariable.setSessionUser(response.data[0].user);
 							sessionVariable.setSessionLogin(response.data[0].login);
 							sessionVariable.setSessionUserId(response.data[0].id);
-							
+
 							navctrl.init = true;
+
+							$state.go('adminview');
 						}
 						else{
 							alert('Usuario o contraseña invalida');
-							
+
 							navctrl.init = false;
 						}
 					})
@@ -40,7 +40,7 @@
 						navctrl.init = false;
 					})
 
-			}		
+			}
 
 			navctrl.registrarse = function(){
 			}
@@ -56,7 +56,7 @@
 
 				navctrl.init = false;
 
-			}	
+			}
 		}
 	]);
 

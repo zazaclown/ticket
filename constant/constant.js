@@ -11,7 +11,7 @@
 		var i_directives = './directives/';
 		var i_BackServices = './backServices/';
 	}
-	else{		
+	else{
 		var i_json = 'http://688b3655.ngrok.io/';
 		var i_services = './services/';
 		var i_views = './views/';
@@ -37,9 +37,14 @@
 												 },
 								urlViews: 		 {
 													url: 		i_views,
-													navbar: 	i_views + 'navbar.html', 
-													form: 		i_views + 'form.html', 
-													bienvenido: i_views + 'bienvenido.html', 
+													navbar: 	i_views + 'navbar.html',
+													form: 		i_views + 'form.html',
+													bienvenido: i_views + 'bienvenido.html',
+													userview: i_views + 'userview.html',
+													userbody: i_views + 'userbody.html',
+													adminview: i_views + 'adminview.html',
+													adminsidebar: i_views + 'adminsidebar.html',
+													adminbody: i_views + 'adminbody.html',
 													footer: 	i_views + 'footer.html'
 												 },
 								urlDirectives:   {
@@ -50,7 +55,7 @@
 													url: 		i_BackServices,
 													backService: i_BackServices + 'backService'
 												 }
-							} 
+							}
 				);
 
 })(angular)

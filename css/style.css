@@ -146,7 +146,7 @@ label {padding: 0 10px;}
 .sidebar .menu a:focus
 /*
 Saco el visited debido a que el menu que mas claro siempre
-, .sidebar .menu a:visited*/ 
+, .sidebar .menu a:visited*/
 {
 	text-decoration: none;
 	background-color:#3BBAEA;
@@ -321,13 +321,13 @@ label.domicilio-subzona {width: 179px !important;}
 	color: #666;
 	font-family: 'MuseoSans500', Arial, Helvetica, sans-serif;
 	font-size: 13px;
-	/*width: auto;*/ 
+	/*width: auto;*/
 	max-width: 1000px;
 	text-align: left;
 }
 
-.style-tooltip + .tooltip > .tooltip-arrow { 
-	border-bottom-color:#cce6ff; 
+.style-tooltip + .tooltip > .tooltip-arrow {
+	border-bottom-color:#cce6ff;
 }
 
 
@@ -690,7 +690,7 @@ Margen
 .titulo-filtro{text-transform: uppercase; }
 .uppercase{text-transform: uppercase;}
 
-/* Overlay 
+/* Overlay
 */
 .overlay {
     background-color: rgba(70, 70, 70, 0.8);
