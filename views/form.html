@@ -19,15 +19,24 @@
         </div>
 
         <div class="form-group">
-          <label for="ejemplo_archivo_1">Adjuntar un archivo</label>
-          <input type="file" id="ejemplo_archivo_1">
-            <p class="help-block">Ejemplo de texto de ayuda.</p>
+          <label for="dni">Evento:</label>
+          <select name="selEvento" id="selEvento" class="form-control fixed-wxxxlg"
+                  ng-options="evento.name for evento in userctrl.evento track by evento.id"
+                  ng-model="userctrl.eventoSelected">
+          </select>
         </div>
 
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Activa esta casilla
-          </label>
+        <div class="form-group">
+          <label for="dni">Fecha Evento:</label>
+          <select name="selFechaEvento" id="selFechaEvento" class="form-control fixed-wxxxlg"
+                  ng-options="eventoFecha.data for eventoFecha in userctrl.eventoFecha track by eventoFecha.id"
+                  ng-model="userctrl.eventoFechaSelected">
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="domicilio">Cantidad De Tickets:</label>
+          <input type="text" class="form-control fixed-wxxxlg" id="cantidad" placeholder="Introduce la cantidad">
         </div>
 
         <button type="submit" class="btn btn-primary">Enviar</button>

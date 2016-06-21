@@ -1,1 +1,73 @@
-llego al body del usuario
+<div class="row margin-top40  container center-block">
+  <div class="col-xs-8">
+    <div class="bs-callout bs-callout-primary">
+
+      <div class="row center-block">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="email" class="form-control fixed-wxxxlg" id="nombre" placeholder="Ingrese su nombre">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control fixed-wxxxlg" id="apellido" placeholder="Ingrese su apellido">
+          </div>
+        </div>
+      </div>
+
+      <div class="row center-block">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="dni">Dni:</label>
+            <input type="text" class="form-control fixed-wxxxlg" id="dni" placeholder="Ingrese su dni">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <div class="form-group">
+              <label for="domicilio">Domicilio:</label>
+              <input type="text" class="form-control fixed-wxxxlg" id="domicilio" placeholder="Ingrese su domicilio">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row center-block">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="dni">Evento:</label>
+            <select name="selEvento" id="selEvento" class="form-control fixed-wxxxlg"
+                    ng-options="evento.name for evento in userctrl.evento track by evento.id"
+                    ng-model="userctrl.eventoSelected">
+            </select>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="dni">Fecha Evento:</label>
+            <select name="selFechaEvento" id="selFechaEvento" class="form-control fixed-wxxxlg"
+                    ng-options="eventoFecha.data for eventoFecha in userctrl.eventoFecha track by eventoFecha.id"
+                    ng-model="userctrl.eventoFechaSelected">
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row center-block">
+        <div class="col-xs-6">
+          <label for="domicilio">Cantidad De Tickets:</label>
+          <input type="text" class="form-control fixed-wxxxlg" id="cantidad" placeholder="Introduce la cantidad">
+        </div>
+      </div>
+
+      <div class="row margin-top20 center-block">
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-primary center-block">Enviar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,19 +1,19 @@
 {
-	"user": 
+	"user":
 		[
 			{
 				"id" : 121212,
 				"user": "Dario Pepper",
 				"login": "pepper",
 				"pass": "123"
-				
+
 			},
 			{
 				"id" : 3333,
 				"user": "Marta Sanchez",
 				"login": "sanchez",
 				"pass": "123"
-				
+
 			},
 			{
 				"id" : 777,
@@ -22,27 +22,27 @@
 				"pass": "123"
 			}
 		],
-	"rol": 
+	"rol":
 		[
-    		{ 	"id": 1, 
+    		{ 	"id": 1,
     			"descripcion": "administrador"
     		},
-    		{ 	"id": 2, 
+    		{ 	"id": 2,
     			"descripcion": "usuario"
     		},
-    		{ 	"id": 3, 
+    		{ 	"id": 3,
     			"descripcion": "cliente"
     		}
   		],
   	"user-rol":
   		[
-  			{	"idUser": 121212, 
+  			{	"idUser": 121212,
   				"idRol":1
   			},
-  			{	"idUser": 3333, 
+  			{	"idUser": 3333,
   				"idRol":2
   			},
-  			{	"idUser": 9898, 
+  			{	"idUser": 777, 
   				"idRol":3
   			}
   		]

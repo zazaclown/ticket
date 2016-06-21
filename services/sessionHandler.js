@@ -16,10 +16,17 @@
 
 			}
 
+			miSH.obtenerUserRol = function(params){
+
+				return consumirHttp.consumir(K_CONST.urlJson.userrol + '?idUser=' + params.idUser );
+
+			}
+
+
 			miSH.cerrarSesion = function(){
 
 			}
-		
+
 		}
 	]);
 

@@ -8,6 +8,7 @@
     <script src="./bower_components/angular-ui-router/release/angular-ui-router.js" ></script>
 
     <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/simple-sidebar.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <!-- <script src="./bower_components/jquery/dist/jquery.js" ></script> -->
     <!-- <script src="./bower_components/bootstrap/dist/js/bootstrap.js" ></script> -->
@@ -27,6 +28,8 @@
     <!-- Controllers -->
     <script src="./controllers/indexCtrl.js" ></script>
     <script src="./controllers/navbarCtrl.js" ></script>
+    <script src="./controllers/adminviewCtrl.js" ></script>
+    <script src="./controllers/userviewCtrl.js" ></script>
 
     <!-- Directives -->
     <script src="./directives/directives.js" ></script>
@@ -39,26 +42,8 @@
       <d-navbar></d-navbar>
 
       <section ui-view ></section>
-      
-      <d-adminsidebar></d-adminsidebar>
-
-      <d-footer></d-footer>
-
-      <pre ng-if="iCtrl.debug" ng-bind="iCtrl.$state.$current.self | json"></pre>
 
     </div>
 
   </body>
 </html>
-
-<!--<div ng-if= "iCtrl.segments.form.visible === 1" ng-include="iCtrl.segments.form.url"></div>-->
-
-<!--<div ng-if= "iCtrl.segments.bienvenido.visible === 1" ng-include="iCtrl.segments.bienvenido.url"></div>-->
-
-<!-- <div ng-if= "iCtrl.segments.footer.visible === 1" ng-include="iCtrl.segments.footer.url"></div> -->
-
-<!-- <d-footer ng-if= "iCtrl.segments.footer.visible === 1"></d-footer> -->
-
-<!-- <div ng-if= "iCtrl.segments.navbar.visible === 1" ng-include="iCtrl.segments.navbar.url"></div> -->
-
-<!-- <d-navbar ng-if= "iCtrl.segments.navbar.visible === 1"></d-navbar> -->

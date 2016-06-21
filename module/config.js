@@ -16,13 +16,15 @@
 		    .state('userview', {
 		        url: "/userview",
 		        //templateUrl: K_CONST.urlViews.bienvenido
-		        templateUrl: K_CONST.urlViews.userview
+		        templateUrl: K_CONST.urlViews.userview,
+						controller: 'userviewCtrl as userctrl'
 		    })
 
 		    .state('adminview', {
 		        url: "/adminview",
 		        //templateUrl: K_CONST.urlViews.bienvenido
-		        templateUrl: K_CONST.urlViews.adminview
+		        templateUrl: K_CONST.urlViews.adminview,
+						controller: 'adminviewCtrl as adminctrl'
 		    })
 
 	})

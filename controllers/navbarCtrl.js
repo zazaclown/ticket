@@ -23,13 +23,35 @@
 							sessionVariable.setSessionLogin(response.data[0].login);
 							sessionVariable.setSessionUserId(response.data[0].id);
 
-							navctrl.init = true;
+							sessionHandler.obtenerUserRol( {"idUser": sessionVariable.getSessionUserId() } )
+								.then(function(response){
+									if (response.data.length) {
+											sessionVariable.setSessionUserIdRol(response.data[0].idRol);
+											navctrl.init = true;
 
-							$state.go('adminview');
+											switch ( sessionVariable.getSessionUserIdRol() ) {
+												case (1 || 2):
+													$state.go('adminview');
+													break;
+												case 3:
+													$state.go('userview');
+													break;
+												default:
+													alert('Usuario con rol incorrecto');
+													navctrl.init = false;
+													break;
+											}
+
+									}
+									else{
+										alert('Usuario sin rol asignado');
+										navctrl.init = false;
+									}
+
+							});
 						}
 						else{
 							alert('Usuario o contraseña invalida');
-
 							navctrl.init = false;
 						}
 					})
@@ -55,6 +77,8 @@
 				navctrl.pass = null;
 
 				navctrl.init = false;
+
+				$state.go('bienvenido');
 
 			}
 		}
